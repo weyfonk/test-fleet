@@ -1,0 +1,4 @@
+# Store fleet testing objects here to create new fleet.yaml
+label:
+  key1: value1
+  #key1: value2
