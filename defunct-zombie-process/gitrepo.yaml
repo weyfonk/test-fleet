@@ -1,0 +1,11 @@
+kind: GitRepo
+apiVersion: fleet.cattle.io/v1alpha1
+metadata:
+  name: zombie-process-check
+spec:
+  repo: https://github.com/rancher/invalid-repo
+  branch: main
+  paths:
+  - dev
+  targets:
+    - clusterName: <name of your downstream cluster>
