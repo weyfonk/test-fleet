@@ -8,6 +8,7 @@ spec:
   paths:
   - nginx-helm
   targetNamespace: do-not-keep-resources
+  keepResources: true
   targets:
     - clusterSelector:
         matchExpressions:
