@@ -1,3 +1,4 @@
 defaultNamespace: default
-#labels:
+labels:
+  new: fleet-label
 #  satya: fleet-label-changed
