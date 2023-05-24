@@ -2,4 +2,4 @@ defaultNamespace: nginx
 helm:
   releaseName: config-chart
   chart: config-chart
-  repo: https://5766-223-233-81-230.ngrok-free.app
+  repo: https://dbb4-106-211-106-186.ngrok-free.app
