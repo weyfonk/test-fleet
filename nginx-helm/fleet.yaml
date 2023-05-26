@@ -1,5 +1,1 @@
 defaultNamespace: nginx
-helm:
-  releaseName: config-chart
-  chart: config-chart
-  repo: https://dbb4-106-211-106-186.ngrok-free.app
