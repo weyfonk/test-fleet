@@ -1,0 +1,12 @@
+kind: GitRepo
+apiVersion: fleet.cattle.io/v1alpha1
+metadata:
+  name: test-helm-regex
+  namespace: fleet-default
+spec:
+  repo: https://github.com/sbulage/test-fleet
+  branch: main
+  helmSecretName: basic-auth-secret    # Secrets much be present in the same namespace GitRepo is created.
+  helmRepoURLRegex: https://5766-223-233-81-230*    # This public URL comes from the ngrok proxy URL.
+  paths:
+  - nginx-helm
