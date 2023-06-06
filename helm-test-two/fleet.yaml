@@ -2,4 +2,4 @@ namespace: two
 helm:
   releaseName: test2
   chart: test
-  repo: https://5ec5-223-233-80-50.ngrok-free.app
+  repo: https://e669-223-233-80-50.ngrok-free.app
