@@ -1,0 +1,5 @@
+namespace: helm-oci
+helm:
+  releaseName: config-chart
+  values:
+    replicas: 2
