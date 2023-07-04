@@ -1,7 +1,7 @@
 defaultNamespace: donotdeploy
 targetCustomizations:
   - name: test
-    doNotdeploy: true
+    doNotDeploy: true
     clusterSelector:
       matchLabels:
         test: imported
