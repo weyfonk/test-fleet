@@ -1,5 +1,5 @@
 namespace: helm-oci
 helm:
-  releaseName: config-chart
+  releaseName: satya-chart
   values:
     replicas: 2
