@@ -1,4 +1,4 @@
-namespace: helm-oci
+defaultNamespace: grafana
 helm:
   releaseName: grafana
   chart: grafana
