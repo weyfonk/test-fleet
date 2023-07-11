@@ -1,5 +1,7 @@
 namespace: helm-oci
 helm:
-  releaseName: satya-chart
+  releaseName: grafana
+  chart: grafana
+  repo: https://grafana.github.io/helm-charts
   values:
     replicas: 2
