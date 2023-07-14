@@ -4,7 +4,7 @@ namespace: fleet-helm-repo-path-nginx
 helm:
   # The release name to use. If empty a generated release name will be used
   releaseName: grafana
-
+  chart: "grafana"
   repo: "https://ghcr.io/sbulage/grafana-6.58.2.tgz"
 
   # Used if repo is set to look up the version of the chart
