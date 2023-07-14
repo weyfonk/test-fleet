@@ -6,18 +6,10 @@ helm:
   releaseName: grafana
 
   chart: "grafana"
-  repo: "https://ghcr.io/sbulage/grafana"
+  repo: "https://ghcr.io/sbulage/grafana-6.58.2.tgz"
 
   # Used if repo is set to look up the version of the chart
   version: "6.58.2"
 
   # Force recreate resource that can not be updated
   force: false
-
-  # How long for helm to wait for the release to be active. If the value
-  # is less that or equal to zero, we will not wait in Helm
-  timeoutSeconds: 0
-
-  # Custom values that will be passed as values.yaml to the installation
-  values:
-    replicas: 2
