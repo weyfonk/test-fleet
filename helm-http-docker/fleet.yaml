@@ -1,9 +1,9 @@
-namespace: fleet-helm-http-with-auth-repo-path-nginx
+namespace: fleet-helm-repo-path-nginx
 
 # Custom helm options
 helm:
   # The release name to use. If empty a generated release name will be used
-  releaseName: grafana:latest
+  releaseName: grafana
 
   chart: "grafana"
   repo: "https://ghcr.io/sbulage/grafana"
