@@ -1,7 +1,7 @@
 defaultNamespace: nginx
 namespaceLabels:
   mylabel: label-from-fleet-yaml
-  name: nginx2
+  name: nginx
   # mylabel1: label1-from-fleet-yaml
   # mylabel2: label2-from-fleet-yaml
   # mylabel3: label3-from-fleet-yaml
