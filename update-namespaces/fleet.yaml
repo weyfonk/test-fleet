@@ -1,11 +1,11 @@
 defaultNamespace: nginx
-namespaceLabels:
-  mylabel: label-from-fleet-yaml
+namespaceLabels: {}
+  # mylabel: label-from-fleet-yaml
   # mylabel1: label1-from-fleet-yaml
   # mylabel2: label2-from-fleet-yaml
   # mylabel3: label3-from-fleet-yaml
-namespaceAnnotations:
-  ns.name.io/annotate: custom-annotation
+namespaceAnnotations: {}
+  # ns.name.io/annotate: custom-annotation
   # ns.os.io/annotate1: custom1-annotation
   # ns.net.io/annotate2: custom2-annotation
   # ns.sys.io/annotate3: custom3-annotation
