@@ -6,6 +6,6 @@ namespaceLabels:
   # mylabel3: label3-from-fleet-yaml
 namespaceAnnotations:
   ns.name.io/annotate: custom-annotation
-  # ns.os.io/annotate1: custom1-annotation
-  # ns.net.io/annotate2: custom2-annotation
-  # ns.sys.io/annotate3: custom3-annotation
+  ns.os.io/annotate1: custom1-annotation
+  ns.net.io/annotate2: custom2-annotation
+  ns.sys.io/annotate3: custom3-annotation
