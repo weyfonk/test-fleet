@@ -2,4 +2,4 @@ defaultNamespace: grafana
 helm:
   releaseName: grafana
   chart: grafana
-  repo: https://330c-139-5-30-33.ngrok-free.app/api/charts
+  repo: https://330c-139-5-30-33.ngrok-free.app
