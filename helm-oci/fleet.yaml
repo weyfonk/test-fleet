@@ -1,7 +1,5 @@
 defaultNamespace: grafana
 helm:
   releaseName: grafana
-  chart: grafana
-  repo: https://grafana.github.io/helm-charts
-  values:
-    replicas: 2
+  chart: longhorn
+  repo: https://github.com/sbulage/charts-to-test/tree/dev-v2.7/charts/longhorn/102.2.1%2Bup1.4.2
