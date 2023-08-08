@@ -2,4 +2,4 @@
 helm:
   releaseName: grafana
   chart: grafana
-  repo: https://grafana.github.io/helm-char
+  repo: https://grafana.github.io:8080/helm-char
