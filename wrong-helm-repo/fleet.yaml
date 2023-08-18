@@ -1,6 +1,6 @@
 defaultNamespace: kubewarden
 helm:
-  releaseName: kubewarden-controller
+  releaseName: grafana
   chart: kubewarden-controller
   version: 1.4.1
-  repo: https://susemanager.suse/pub/helm
+  repo: https://susemanager.suse/pub/helm-charts
