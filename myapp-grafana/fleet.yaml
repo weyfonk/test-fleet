@@ -1,5 +1,5 @@
 # defaultNamespace: myapp-grafana
 helm:
-  releaseName: grafana
-  chart: grafana
-  repo: https://grafana.github.io/helm
+  releaseName: config-chart
+  # chart: grafana
+  repo: https://9da4-106-216-250-179.ngrok-free.app/api/charts
