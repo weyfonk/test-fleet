@@ -1,3 +1,4 @@
+defaultNamespace: cattle-fleet-system
 helm:
   releaseName: traefik
   chart: traefik
