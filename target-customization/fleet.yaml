@@ -1,9 +1,10 @@
+helm:
+  releaseName: grafana
+  chart: grafana
+  repo: https://grafana.github.io/helm-charts
 targetCustomizations:
   defaultNamespace: myapp-grafana
   helm:
-    releaseName: grafana
-    chart: grafana
-    repo: https://grafana.github.io/helm-charts
     values:
       nodeSelector:
         node: imported
