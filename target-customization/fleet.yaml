@@ -3,8 +3,12 @@ helm:
   chart: grafana
   repo: https://grafana.github.io/helm-charts
 targetCustomizations:
-  defaultNamespace: myapp-grafana
+- name: target-cust-for-helm
+  defaultNamespace: grafana-target
   helm:
     values:
       nodeSelector:
         node: imported
+  clusterSelector:
+    matchLabels:
+      env: prod
