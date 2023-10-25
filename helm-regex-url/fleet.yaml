@@ -1,4 +1,4 @@
 helm:
-  releaseName: config-chart
-  chart: config-chart
+  releaseName: loki
+  chart: loki
   repo: https://6ca9-139-5-30-33.ngrok-free.app
