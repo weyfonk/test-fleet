@@ -2,6 +2,8 @@ defaultNamespace: nginx
 namespaceLabels:
   mylabel: label-from-fleet-yaml
   mylabel1: label1-from-fleet-yaml
+  pod-security.kubernetes.io/enforce: privileged
+  pod-security.kubernetes.io/enforce-version: latest
   # mylabel2: label2-from-fleet-yaml
   # mylabel3: label3-from-fleet-yaml
 namespaceAnnotations: {}
