@@ -1,5 +1,6 @@
 defaultNamespace: nginx
 namespaceLabels:
+  name: nginx
   satya: test
   mylabel: label-from-fleet-yaml
   mylabel1: label1-from-fleet-yaml
