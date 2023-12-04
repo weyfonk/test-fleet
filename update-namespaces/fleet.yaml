@@ -1,5 +1,6 @@
 defaultNamespace: nginx
 namespaceLabels:
+  satya: test
   mylabel: label-from-fleet-yaml
   mylabel1: label1-from-fleet-yaml
   pod-security.kubernetes.io/enforce: privileged
