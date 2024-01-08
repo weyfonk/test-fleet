@@ -18,9 +18,9 @@ targetCustomizations:
     matchLabels:
       example.com/cluster: prod
 
-- name: dr
-  helm:
-    chart: https://hostname-only-valid-here.example.com/nginx-15.4.4.tgz
-  clusterSelector:
-    matchLabels:
-      example.com/cluster: dr
+#- name: dr
+#  helm:
+#   chart: https://hostname-only-valid-here.example.com/nginx-15.4.4.tgz
+#  clusterSelector:
+#    matchLabels:
+#      example.com/cluster: dr
