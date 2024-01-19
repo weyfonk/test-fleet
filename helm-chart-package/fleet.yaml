@@ -1,1 +1,3 @@
-
+defaultNamespace: default
+helm:
+  chart: git@github.com:sbulage/test-fleet/redis-helm-application/helm
