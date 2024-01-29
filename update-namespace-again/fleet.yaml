@@ -1,5 +1,6 @@
 defaultNamespace: test-satya
-namespaceLabels: {}
+namespaceLabels:
+  name: manuel
   # mylabel: label-from-fleet-yaml
   # test_automation_repo_name: fleet-e2e
 namespaceAnnotations: {}
