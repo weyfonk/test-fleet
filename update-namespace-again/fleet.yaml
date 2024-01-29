@@ -1,4 +1,4 @@
-defaultNamespace: nginx
+defaultNamespace: test-satya
 namespaceLabels:
   mylabel: label-from-fleet-yaml
 namespaceAnnotations:
