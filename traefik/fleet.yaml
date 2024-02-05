@@ -1,4 +1,4 @@
-defaultNamespace: cattle-fleet-system
+defaultNamespace: traefik
 helm:
   releaseName: traefik
   chart: traefik
