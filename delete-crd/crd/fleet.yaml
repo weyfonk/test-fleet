@@ -1,0 +1,9 @@
+defaultNamespace: kubewarden
+helm:
+  releaseName: kubewarden-crds
+  chart: kubewarden-crds
+  repo: https://charts.kubewarden.io
+  version: v221.0.0
+labels:
+  key: valuetestchanged
+deleteCRDResources: false
