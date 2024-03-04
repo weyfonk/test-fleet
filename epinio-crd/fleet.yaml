@@ -1,0 +1,6 @@
+defaultNamespace: epinio-ns
+helm:
+  releaseName: epinio
+  chart: epinio
+  repo: https://epinio.github.io/helm-charts
+deleteCRDResources: true
