@@ -1,0 +1,7 @@
+defaultNamespace: kubewarden
+helm:
+  releaseName: kubewarden-defaults
+  chart: kubewarden-defaults
+  repo: https://charts.kubewarden.io
+labels:
+  key: valuetestchanged
