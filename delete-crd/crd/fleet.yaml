@@ -3,7 +3,7 @@ helm:
   releaseName: kubewarden-crds
   chart: kubewarden-crds
   repo: https://charts.kubewarden.io
-  version: v221.0.0
+  version: v1.4.5
 labels:
   key: valuetestchanged
 deleteCRDResources: false
