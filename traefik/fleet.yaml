@@ -3,5 +3,4 @@ helm:
   releaseName: traefik
   chart: traefik
   repo: https://traefik.github.io/charts
-  version: v26.1.0
 deleteCRDResources: true
