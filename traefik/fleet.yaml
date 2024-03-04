@@ -1,4 +1,4 @@
-defaultNamespace: cattle-fleet-system
+defaultNamespace: kube-system
 helm:
   releaseName: traefik
   chart: traefik
