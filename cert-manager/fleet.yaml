@@ -11,4 +11,4 @@ helm:
     ingressShim:
       defaultIssuerName: letsencrypt-prod
       defaultIssuerKind: ClusterIssuer
-deleteCRDResources: false
+deleteCRDResources: true
