@@ -1,14 +1,13 @@
 kind: GitRepo
 apiVersion: fleet.cattle.io/v1alpha1
 metadata:
-  name: keep
+  name: do-not-keep-resources
 spec:
   repo: https://github.com/sbulage/test-fleet
   branch: main
   paths:
   - nginx-helm
-  targetNamespace: keep-resources
-  keepResources: true
+  targetNamespace: do-not-keep-resources
   targets:
     - clusterSelector:
         matchExpressions:
