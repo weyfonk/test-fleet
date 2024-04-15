@@ -3,7 +3,7 @@ helm:
   releaseName: traefik
   chart: traefik
   repo: https://traefik.github.io/charts
-  version: '20.3.1+up20.3.0'
-  values:
-    installCRDs: true
-deleteCRDResources: true
+#  version: '20.3.1+up20.3.0'
+#  values:
+#    installCRDs: true
+# deleteCRDResources: true
