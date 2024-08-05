@@ -1,0 +1,6 @@
+defaultNamespace: redis-namespace
+helm:
+  repo: https://charts.bitnami.com/bitnami
+  chart: redis
+  releaseName: redis-release
+  version: 19.6.0
