@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: config-map-will-be-created
+  namespace: default
+data:
+  test: "This config map will be created and not ignored."
