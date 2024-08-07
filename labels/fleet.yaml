@@ -1,4 +1,5 @@
 defaultNamespace: default
 labels:
   new: fleet-label2
+  anotherNew: fleet-label2
  # new_changed: fleet-label-changed
