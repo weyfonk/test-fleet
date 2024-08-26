@@ -1,1 +1,2 @@
 defaultNamespace: disable-poling-nginx-ns
+disablePolling: true
