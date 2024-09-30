@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx-keep
+  name: nginx-keep-1
   labels:
     app: nginx
 spec:
