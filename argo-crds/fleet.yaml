@@ -18,5 +18,6 @@ helm:
     images:
       pullPolicy: IfNotPresent
     crds:
-#      keep: true # <-- enable this option to see annotation is not added to the deployment.
-      keep: false
+      #Enable this option to see annotation is not added to the deployment.
+      keep: true
+
