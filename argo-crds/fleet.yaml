@@ -17,7 +17,7 @@ helm:
       extraArgs: [--auth-mode=server]
     images:
       pullPolicy: IfNotPresent
-    crds:
+#    crds:
       #Enable this option to see annotation is not added to the deployment.
-      keep: true
+#      keep: true
 
