@@ -17,6 +17,6 @@ helm:
       extraArgs: [--auth-mode=server]
     images:
       pullPolicy: IfNotPresent
-    // Uncomment below lines to see annotations gets removed or not.
+#     Uncomment below lines to see annotations gets removed or not.
 #    crds:
 #      keep: true
