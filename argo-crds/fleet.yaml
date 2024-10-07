@@ -17,3 +17,5 @@ helm:
       extraArgs: [--auth-mode=server]
     images:
       pullPolicy: IfNotPresent
+    crds:
+      keep: true
