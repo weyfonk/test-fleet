@@ -1,16 +1,14 @@
 defaultNamespace: argo
 
 helm:
-  # Use a custom location for the Helm chart. This can refer to any go-getter URL.
-  # This allows one to download charts from most any location.  Also know that
-  # go-getter URL supports adding a digest to validate the download. If repo
-  # is set below this field is the name of the chart to lookup
   chart: argo-workflows
-
   repo: https://argoproj.github.io/argo-helm
-
   version: 0.41.14
   releaseName: argo-workflows
+  
+  # change this to test
+  deleteCRDResources: true
+  
   values:
     fullnameOverride: argo-workflows
     server:
@@ -18,5 +16,6 @@ helm:
     images:
       pullPolicy: IfNotPresent
 #     Uncomment below lines to see annotations gets removed or not.
-#    crds:
-#      keep: false
+#     this needs to be false to test "deleteCRDResources"
+    crds:
+      keep: false
