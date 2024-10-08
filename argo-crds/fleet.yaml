@@ -19,4 +19,4 @@ helm:
       pullPolicy: IfNotPresent
 #     Uncomment below lines to see annotations gets removed or not.
 #    crds:
-#      keep: true
+#      keep: false
