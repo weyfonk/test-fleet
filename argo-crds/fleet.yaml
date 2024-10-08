@@ -6,9 +6,6 @@ helm:
   version: 0.41.14
   releaseName: argo-workflows
   
-  # change this to test
-deleteCRDResources: true
-  
   values:
     fullnameOverride: argo-workflows
     server:
@@ -19,3 +16,5 @@ deleteCRDResources: true
 #     this needs to be false to test "deleteCRDResources"
     crds:
       keep: false
+# change this to test
+deleteCRDResources: true
