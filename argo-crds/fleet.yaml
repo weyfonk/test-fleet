@@ -17,4 +17,4 @@ helm:
     crds:
       keep: false
 # change this to test
-deleteCRDResources: true
+deleteCRDResources: false
