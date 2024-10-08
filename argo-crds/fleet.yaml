@@ -7,7 +7,7 @@ helm:
   releaseName: argo-workflows
   
   # change this to test
-  deleteCRDResources: true
+deleteCRDResources: true
   
   values:
     fullnameOverride: argo-workflows
