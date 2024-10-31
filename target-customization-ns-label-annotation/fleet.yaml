@@ -1,7 +1,7 @@
-#defaultNamespace: fleet-nginx
-targetCustomizations:
-- name: target-ns
-  namespaceLabels:
-    mylabel: label-from-fleet-yaml
-  namespaceAnnotations:
-    ns.name.io/annotate: custom-annotation
+defaultNamespace: fleet-nginx
+#targetCustomizations:
+#- name: target-ns
+#  namespaceLabels:
+#    mylabel: label-from-fleet-yaml
+#  namespaceAnnotations:
+#    ns.name.io/annotate: custom-annotation
