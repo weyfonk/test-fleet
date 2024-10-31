@@ -5,10 +5,6 @@ helm:
 targetCustomizations:
 - name: target-cust-for-helm
   defaultNamespace: grafana-target
-  helm:
-    values:
-      nodeSelector:
-        node: imported
   clusterSelector:
     matchLabels:
       env: prod
