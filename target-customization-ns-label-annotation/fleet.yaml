@@ -1,16 +1,7 @@
 #defaultNamespace: fleet-nginx
 targetCustomizations:
 - name: target-ns
-  namespaceLabels: # {} It will remove the label assigned on namespace.
+  namespaceLabels:
     mylabel: label-from-fleet-yaml
-    # mylabel1: label1-from-fleet-yaml
-    # mylabel2: label2-from-fleet-yaml
-    # mylabel3: label3-from-fleet-yaml
-
-  # namespaceAnnotations are annotations that will be appended to the namespace
-  # created by Fleet.
-  namespaceAnnotations: # {} It will remove the annotations assigned on namespace.
+  namespaceAnnotations:
     ns.name.io/annotate: custom-annotation
-    # ns.os.io/annotate1: custom1-annotation
-    # ns.net.io/annotate2: custom2-annotation
-    # ns.sys.io/annotate3: custom3-annotation
