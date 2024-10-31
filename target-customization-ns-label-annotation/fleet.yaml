@@ -1,5 +1,6 @@
 #defaultNamespace: fleet-nginx
 targetCustomizations:
+- name: target-ns
   namespaceLabels: # {} It will remove the label assigned on namespace.
     mylabel: label-from-fleet-yaml
     # mylabel1: label1-from-fleet-yaml
