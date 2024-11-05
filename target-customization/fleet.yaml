@@ -8,3 +8,7 @@ targetCustomizations:
   clusterSelector:
     matchLabels:
       env: prod
+  namespaceLabels:
+    mylabel: label-from-fleet-yaml
+  namespaceAnnotations:
+    ns.name.io/annotate: custom-annotation
