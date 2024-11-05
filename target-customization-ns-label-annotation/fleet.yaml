@@ -1,4 +1,8 @@
-defaultNamespace: fleet-nginx
+defaultNamespace: fleet-grafana
+helm:
+  releaseName: grafana
+  chart: grafana
+  repo: https://grafana.github.io/helm-charts
 targetCustomizations:
 - name: target-ns
   namespaceLabels:
