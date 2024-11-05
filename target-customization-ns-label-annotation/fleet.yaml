@@ -1,9 +1,6 @@
 defaultNamespace: fleet-nginx
 targetCustomizations:
 - name: target-ns
-  clusterSelector:
-    matchLabels:
-      env: prod
   namespaceLabels:
     mylabel: label-from-fleet-yaml
   namespaceAnnotations:
