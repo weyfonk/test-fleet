@@ -4,7 +4,6 @@ helm:
   repo: https://grafana.github.io/helm-charts
 targetCustomizations:
 - name: target-cust-for-helm
-  defaultNamespace: grafana-target
   clusterName: local
   namespaceLabels:
     mylabel: label-from-fleet-yaml
