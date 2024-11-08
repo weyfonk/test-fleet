@@ -5,7 +5,7 @@ helm:
 targetCustomizations:
 - name: target-cust-for-helm
   defaultNamespace: grafana-target
-  clusterName: imported-0
+  clusterName: my-cluster
   namespaceLabels:
     mylabel: label-from-fleet-yaml
   namespaceAnnotations:
