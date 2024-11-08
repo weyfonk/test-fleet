@@ -6,7 +6,7 @@ targetCustomizations:
 - name: target-cust-for-helm
   defaultNamespace: grafana-target
   clusterName: my-cluster
-  namespaceLabels:
-    mylabel: label-from-fleet-yaml
-  namespaceAnnotations:
-    ns.name.io/annotate: custom-annotation
+  namespaceLabels: {}
+    #mylabel: label-from-fleet-yaml
+  namespaceAnnotations: {}
+    #ns.name.io/annotate: custom-annotation
