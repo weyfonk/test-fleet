@@ -1,5 +1,5 @@
 defaultNamespace: nginx
-helm:
-  releaseName: grafana
-  chart: grafana
-  repo: https://grafana.github.io/helm-charts
+#helm:
+#  releaseName: grafana
+#  chart: grafana
+#  repo: https://grafana.github.io/helm-charts
