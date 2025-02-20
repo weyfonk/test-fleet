@@ -8,13 +8,8 @@ targetCustomizations:
   clusterName: second
   namespaceLabels: 
     mylabel: label-from-fleet-yaml
-    mylabel1: label1-from-fleet-yaml
-    mylabel2: label2-from-fleet-yaml
     mylabel3-foo: label3-from-fleet-yaml
     something-else: label4-from-fleet-yaml-from-tan
   namespaceAnnotations: 
-    ns.name.io/annotate: custom-annotation
     ns.name.io/annotate1: custom-annotation1
-    ns.name.io/annotate2: custom-annotation2
-    ns.name.io/annotate3-bar: custom-annotation3
     or-this: custom-annotation4-from-tan
