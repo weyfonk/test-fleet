@@ -1,5 +1,6 @@
 defaultNamespace: myapp-grafana
 helm:
-  releaseName: grafanas
+  releaseName: grafana
   chart: grafana
   repo: https://grafana.github.io/helm-charts
+  version: x.0.3
