@@ -11,4 +11,4 @@ helm:
   version: "6.58.2"
 
   # Force recreate resource that can not be updated
-  force: false
+  force: fal
