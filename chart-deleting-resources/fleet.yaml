@@ -9,3 +9,5 @@ helm:
   values:
     global:
       name: consul
+      acls:
+        manageSystemACLs: true
