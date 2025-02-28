@@ -11,3 +11,11 @@ helm:
       name: consul
       acls:
         manageSystemACLs: true
+diff:
+  comparePatches:
+  - apiVersion: batch/v1
+    kind: Job
+    namespace: consul
+    name: consul-server-acl-init
+    operations:
+    - {"op":"ignore"}
