@@ -6,7 +6,7 @@ targetCustomizations:
      matchLabels:
         env: dev
 - name: prod
-  doNotDeploy: false
+  doNotDeploy: true
   clusterSelector:
      matchLabels:
         env: prod
