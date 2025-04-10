@@ -5,8 +5,3 @@ overrideTargets:
   clusterSelector:
      matchLabels:
         env: dev
-- name: target2
-  doNotDeploy: false
-  clusterSelector:
-     matchLabels:
-        env: prod
