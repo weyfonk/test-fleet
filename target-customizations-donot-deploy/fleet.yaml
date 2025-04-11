@@ -1,7 +1,7 @@
 namespace: nginx-override
 targetCustomizations:
 - name: dev
-  doNotDeploy: false
+  doNotDeploy: true
   clusterSelector:
      matchLabels:
         env: dev
