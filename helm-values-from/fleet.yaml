@@ -1,0 +1,9 @@
+helm:
+  valuesFrom:
+    - secretKeyRef:
+        name: secret-values
+        key: values.yaml
+      configMapKeyRef:
+        name: configmap-values
+        namespace: default
+        key: values.yaml
