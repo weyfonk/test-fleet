@@ -13,5 +13,5 @@ metadata:
 spec:
   repo: https://github.com/rancher/fleet-examples
   paths:
-  - qa-test-apps/helm-app/values-from-with-empty-values
+  - helm/helm--with-values-from
 ```
