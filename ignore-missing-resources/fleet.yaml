@@ -1,6 +1,6 @@
 defaultNamespace: kube-system
 helm:
-  releaseName: test-consul
+  releaseName: traefik-crd
   chart: "consul"
   repo: "https://helm.releases.hashicorp.com"
 
