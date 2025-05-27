@@ -1,0 +1,38 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: vault-init
+  namespace: vault
+spec:
+  template:
+    spec:
+      serviceAccountName: vault
+      containers:
+        - name: vault-init
+          image: hashicorp/vault:1.15.0
+          command: ["/bin/sh", "-c"]
+          args:
+            - |
+              set -e
+
+              # Initialize Vault if not already
+              if ! vault status | grep -q 'Initialized.*true'; then
+                echo "Initializing Vault..."
+                vault operator init -key-shares=1 -key-threshold=1 -format=json > /tmp/init.json
+                cat /tmp/init.json
+              else
+                echo "Vault already initialized"
+              fi
+
+              # Unseal Vault
+              UNSEAL_KEY=$(jq -r ".unseal_keys_b64[0]" /tmp/init.json)
+              vault operator unseal $UNSEAL_KEY
+
+              # Login with root token
+              ROOT_TOKEN=$(jq -r ".root_token" /tmp/init.json)
+              vault login $ROOT_TOKEN
+
+              # Bootstrap: enable auth, write policy, etc.
+              vault auth enable userpass
+              echo 'path "secret/*" { capabilities = ["read", "list"] }' | vault policy write read-secrets -
+      restartPolicy: OnFailure
