@@ -1,12 +1,12 @@
 defaultNamespace: consul
 helm:
   releaseName: test-consul
-  chart: "consul"
+  chart: "my-vault"
   repo: "https://helm.releases.hashicorp.com"
 
   values:
     global:
-      name: consul
+      name: vault
       acls:
         manageSystemACLs: true
 # Below section will 'ignore' any modifications done to objects.
