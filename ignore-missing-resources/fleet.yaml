@@ -2,18 +2,17 @@ defaultNamespace: vault
 helm:
   chart: vault
   repo: https://helm.releases.hashicorp.com
-  version: 0.27.0  # Use the version you need
+  version: 0.27.0
   releaseName: vault
   values:
+    # Your minimal vault config here...
     server:
       ha:
         enabled: true
         replicas: 3
-
       dataStorage:
         enabled: true
         size: 10Gi
-
       config: |
         ui = true
 
@@ -25,20 +24,15 @@ helm:
         storage "raft" {
           path = "/vault/data"
         }
-
       service:
         type: ClusterIP
-
       extraEnvironmentVars:
         VAULT_LOG_LEVEL: debug
-
       serviceAccount:
         create: true
         name: vault
-
     ui:
       enabled: true
-
     image:
       repository: hashicorp/vault
       tag: "1.15.0"
