@@ -1,4 +1,4 @@
-defaultNamespace: consul
+defaultNamespace: kube-system
 helm:
   releaseName: test-consul
   chart: "consul"
