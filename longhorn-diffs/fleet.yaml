@@ -2,7 +2,6 @@ defaultNamespace: longhorn-system
 helm:
   repo: https://charts.longhorn.io
   chart: longhorn
-  version: 1.6.0
   releaseName: longhorn
 diff:
   comparePatches:
