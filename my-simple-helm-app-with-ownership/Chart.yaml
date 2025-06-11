@@ -1,0 +1,5 @@
+apiVersion: v2
+name: mycrdresource-app
+description: Helm chart for MyCRDResource CRD and example resource
+version: 0.1.0
+appVersion: "1.0"
