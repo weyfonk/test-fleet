@@ -14,7 +14,7 @@ helm:
       pullPolicy: IfNotPresent
 #     Uncomment below lines to see annotations gets removed or not.
 #     this needs to be false to test "deleteCRDResources"
-    crds:
-      keep: false
+#   crds:
+#      keep: false
 # change this to test
 # deleteCRDResources: true
