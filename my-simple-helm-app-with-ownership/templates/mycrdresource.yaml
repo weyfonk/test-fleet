@@ -1,0 +1,7 @@
+apiVersion: example.com/v1
+kind: MyCRDResource
+metadata:
+  name: {{ .Values.mycrdresource.name }}
+  namespace: {{ .Values.mycrdresource.namespace }}
+spec:
+{{ toYaml .Values.mycrdresource.spec | indent 2 }}
