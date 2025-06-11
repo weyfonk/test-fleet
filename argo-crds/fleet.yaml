@@ -19,4 +19,4 @@ helm:
 # change this to test
 # deleteCRDResources: true
 # Makes helm skip the check for its own annotations
-  takeOwnership: true
+#  takeOwnership: true
