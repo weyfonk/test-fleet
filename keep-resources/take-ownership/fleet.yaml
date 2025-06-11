@@ -1,3 +1,4 @@
+defaultNamespace: nginx
 helm:
   # Makes helm skip the check for its own annotations
   takeOwnership: true
