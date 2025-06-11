@@ -1,0 +1,11 @@
+mycrdresource:
+  name: example-resource
+  namespace: default
+  spec:
+    color: green
+    size: big
+    enabled: true
+    replicas: 3
+    nested:
+      linux: yes
+      from-scratch: YES
