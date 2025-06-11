@@ -1,2 +1,11 @@
-config:
-  message: "Hello from Helm!"
+mycrdresource:
+  name: example-resource
+  namespace: default
+  spec:
+    color: red
+    size: medium
+    enabled: true
+    replicas: 3
+    nested:
+      linux: yes
+      from-scratch: no
