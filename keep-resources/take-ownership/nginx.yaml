@@ -4,6 +4,7 @@ metadata:
   name: nginx-keep-3
   labels:
     app: nginx
+    added-label: after-takeownership-true
 spec:
   replicas: 3
   selector:
