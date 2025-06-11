@@ -1,0 +1,16 @@
+kind: GitRepo
+apiVersion: fleet.cattle.io/v1alpha1
+metadata:
+  name: keep-resources
+spec:
+  repo: https://github.com/sbulage/test-fleet
+  branch: main
+  paths:
+  - keep-resources/take-ownership
+  targets:
+    - clusterSelector:
+        matchExpressions:
+          - key: provider.cattle.io
+            operator: NotIn
+            values:
+              - harvester
