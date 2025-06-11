@@ -1,11 +1,2 @@
 config:
   message: "Hello from Helm!"
-
-dataResource:
-  name: crd-test
-  namespace: default
-  labels:
-    test: adopt
-  spec:
-    color: blue
-    size: large
