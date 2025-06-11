@@ -1,0 +1,18 @@
+apiVersion: fleet.cattle.io/v1alpha1
+kind: GitRepo
+metadata:
+  name: test-ownership
+  namespace: fleet-default
+spec:
+  branch: main
+  keepResources: true
+  paths:
+    - my-simple-helm-app
+  repo: https://github.com/sbulage/test-fleet
+  targets:
+    - clusterSelector:
+        matchExpressions:
+          - key: provider.cattle.io
+            operator: NotIn
+            values:
+              - harvester
