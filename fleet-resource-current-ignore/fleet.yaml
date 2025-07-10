@@ -1,0 +1,8 @@
+helm:
+  releaseName: rancher-monitoring
+  valuesFiles:
+    - ./chart/logging.yaml
+ignore:
+  conditions:
+    - type: "Failed"
+      status: "False"
