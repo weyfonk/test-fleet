@@ -6,4 +6,5 @@ helm:
     global:
       shell:
         port: 4242
-        hostKeys: gitlab-keys
+        hostKeys:
+          secret: gitlab-keys
