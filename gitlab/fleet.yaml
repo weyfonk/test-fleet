@@ -1,0 +1,9 @@
+helm:
+  repo: http://charts.gitlab.io/
+  chart: gitlab
+  version: 9.3.2
+  values:
+    global:
+      shell:
+        port: 4242
+        hostKeys: gitlab-keys
