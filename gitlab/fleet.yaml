@@ -3,6 +3,8 @@ helm:
   chart: gitlab
   version: 9.3.2
   values:
+    certmanager-issuer:
+      email: tan@du.de
     global:
       shell:
         port: 4242
