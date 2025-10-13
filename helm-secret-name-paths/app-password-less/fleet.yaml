@@ -1,5 +1,5 @@
-defaultNamespace: myapp-grafana
+defaultNamespace: nginx
 helm:
-  releaseName: grafana
-  chart: grafana
-  repo: https://grafana.github.io/helm-charts
+  releaseName: nginx-ingress
+  chart: nginx
+  repo: https://helm.nginx.com/stable
