@@ -1,0 +1,4 @@
+defaultNamespace: sleeper
+helm:
+  chart: oci://server-ip:port-no/sleeper-chart
+  version: 0.1.0
