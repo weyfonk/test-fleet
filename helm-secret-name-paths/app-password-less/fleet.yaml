@@ -1,5 +1,6 @@
 defaultNamespace: nginx
 helm:
-  releaseName: nginx-ingress
-  chart: nginx-ingress
-  repo: https://helm.nginx.com/stable
+  releaseName: nginx
+  chart: nginx
+  repo: https://charts.bitnami.com/bitnami
+  version: 22.0.11
