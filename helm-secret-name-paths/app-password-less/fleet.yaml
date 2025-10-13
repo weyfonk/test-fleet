@@ -1,5 +1,5 @@
 defaultNamespace: nginx
 helm:
   releaseName: nginx-ingress
-  chart: nginx
+  chart: nginx-ingress
   repo: https://helm.nginx.com/stable
