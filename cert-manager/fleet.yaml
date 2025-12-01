@@ -3,11 +3,12 @@ helm:
   releaseName: cert-manager
   chart: cert-manager
   repo: "https://charts.jetstack.io"
-  version: "v1.11.0"
+  version: "v1.19.0"
   values:
     extraArgs:
       - '--enable-certificate-owner-ref=true'
-    installCRDs: true
+    crds:
+      enabled: true
     ingressShim:
       defaultIssuerName: letsencrypt-prod
       defaultIssuerKind: ClusterIssuer
