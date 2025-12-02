@@ -12,7 +12,7 @@ helm:
     replicas: 1
     extraEnv:
       - name: CATTLE_SERVER_URL
-        value: https://{{.hostname}}
+        value: "https://{{ tpl .Values.hostname . }}"
 
   valuesFrom:
     - configMapKeyRef:
