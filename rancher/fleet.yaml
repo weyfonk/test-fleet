@@ -12,7 +12,9 @@ helm:
   valuesFrom:
     - configMapKeyRef:
       name: rancher-cfg
+      namespace: default
       key: values.yaml
     - secretKeyRef:
       name: rancher-creds
+      namespace: default
       key: values.yaml
