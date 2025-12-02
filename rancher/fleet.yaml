@@ -16,9 +16,7 @@ helm:
   valuesFrom:
     - configMapKeyRef:
       name: rancher-cfg
-      namespace: cattle-system
       key: hostname
     - secretKeyRef:
       name: rancher-creds
-      namespace: cattle-system
       key: bootstrapPassword
