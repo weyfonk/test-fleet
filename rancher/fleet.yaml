@@ -1,4 +1,5 @@
-dependsOn: install-rancher-cert-manager
+dependsOn:
+- name: 'install-rancher-cert-manager'
 helm:
   repo: https://releases.rancher.com/server-charts/latest
   chart: rancher
@@ -18,5 +19,3 @@ helm:
       name: rancher-creds
       namespace: cattle-system
       key: bootstrapPassword
-
-
