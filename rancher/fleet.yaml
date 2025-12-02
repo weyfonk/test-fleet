@@ -1,3 +1,4 @@
+defaultNamespace: cattle-system
 dependsOn:
 - selector: # XXX; why does this not work simply by name?
     matchLabels:
