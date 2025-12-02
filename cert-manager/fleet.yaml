@@ -1,4 +1,6 @@
 defaultNamespace: cert-manager
+labels:
+  name: cert-manager
 helm:
   releaseName: cert-manager
   chart: cert-manager
