@@ -1,3 +1,4 @@
+name: cert-manager
 defaultNamespace: cert-manager
 labels:
   name: cert-manager
