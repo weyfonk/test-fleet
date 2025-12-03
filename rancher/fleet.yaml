@@ -17,5 +17,7 @@ helm:
         key: values.yaml
   values:
     extraEnv:
-      - name: "CATTLE_FLEET_BEFORE_RANCHER"
+      - name: CATTLE_FLEET_BEFORE_RANCHER
         value: "true"
+      - name: CATTLE_SERVER_URL
+        value: "https://172.19.0.2.sslip.io"
