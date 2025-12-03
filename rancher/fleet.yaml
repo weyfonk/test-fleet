@@ -6,10 +6,6 @@ helm:
   repo: https://releases.rancher.com/server-charts/latest
   chart: rancher
   version: 2.13.0
-  values:
-    extraEnv:
-      - name: "CATTLE_FLEET_BEFORE_RANCHER"
-        value: "true"
   valuesFrom:
     - configMapKeyRef:
         name: rancher-cfg
@@ -19,3 +15,7 @@ helm:
         name: rancher-creds
         namespace: default
         key: values.yaml
+  values:
+    extraEnv:
+      - name: "CATTLE_FLEET_BEFORE_RANCHER"
+        value: "true"
