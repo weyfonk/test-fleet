@@ -20,7 +20,3 @@ helm:
     extraEnv:
       - name: CATTLE_FLEET_BEFORE_RANCHER
         value: "true"
-      - name: CATTLE_SERVER_URL
-        value: "https://172.19.0.2.sslip.io"
-      - name: CATTLE_FLEET_VERSION
-        value: "107.0.5+up0.13.5"
