@@ -17,11 +17,6 @@ helm:
         namespace: default
         key: values.yaml
   values:
-    replicas: 1
-    debug: true
-    {{- with (index (lookup "v1" "Service" "kube-system" "traefik").status.loadBalancer.ingress 0) }}
-    hostname: {{ .ip }}
-    {{- end }}
     extraEnv:
       - name: CATTLE_FLEET_BEFORE_RANCHER
         value: "true"
