@@ -2,7 +2,10 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: rancher-cfg
-  namespace: default
+  # this config map could also live in the default namespace and be referenced
+  # through `downstreamResources` in fleet.yaml, with the corresponding experimental
+  # feature enabled in Fleet.
+  namespace: fleet-local
 data:
   values.yaml:
     replicas: 1
