@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fake-slow-registry
+  labels:
+    app: fake-slow-registry
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: fake-slow-registry
+  template:
+    metadata:
+      labels:
+        app: fake-slow-registry
+    spec:
+      containers:
+      - name: fake-slow-registry
+        image: aruiz14/fake-slow-registry:test
+        ports:
+        - containerPort: 8080
+        resources:
+          limits:
+            cpu: "500m"
+            memory: "128Mi"
+          requests:
+            cpu: "100m"
+            memory: "64Mi"
