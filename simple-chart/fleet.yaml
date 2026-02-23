@@ -3,9 +3,4 @@ helm:
   values:
     name: example-value
   templateValues:
-    {{- $ingress := lookup "v1" "Service" "kube-system" "traefik" }}
-    {{- if $ingress }}
-    url: {{ (index $ingress.status.loadBalancer.ingress 0).ip }}
-    {{- else }}
-    url: foo
-    {{- end }}
+    url: ${ if eq (index .ClusterLabels "fleet.com/somevalue") "true" }"${ .ClusterValues.global.proxy.url }"${ end}
