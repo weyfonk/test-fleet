@@ -3,4 +3,6 @@ helm:
   values:
     name: example-value
   templateValues:
-    url: ${ if eq (index .ClusterLabels "fleet.com/somevalue") "true" }"${ .ClusterValues.global.proxy.url }"${ end}
+    {{- if eq (index .ClusterLabels "fleet.com/somevalue") "true" -}}
+    url: "${ .ClusterValues.global.proxy.url }"
+    {{- end -}}
