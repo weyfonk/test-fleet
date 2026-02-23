@@ -1,2 +1,5 @@
 templateValues:
-  url: {{ (index (lookup "v1" "Service" "kube-system" "traefik").status.loadBalancer.ingress 0).ip }}
+  {{- $ingress := lookup "v1" "Service" "kube-system" "traefik" }}
+  {{- if $ingress }}
+  url: {{ (index $ingress.status.loadBalancer.ingress 0).ip }}
+  {{- end }}
