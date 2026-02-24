@@ -3,4 +3,8 @@ helm:
   values:
     name: example-value
   templateValues:
-    url: {{ (index (lookup "v1" "Service" "kube-system" "traefik).status.loadBalancer.ingress 0).ip }}
+    {{- if $ingress :=  -}}
+    url: "${ (index (lookup "v1" "Service" "kube-system" "traefik").status.loadBalancer.ingress 0).ip }"
+    {{- else -}}
+    url: foo
+    {{- end -}}
